@@ -1,0 +1,24 @@
+{
+  "name": "gulp-exercicio-sass-imagem-js",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Exercício: compilar SASS, comprimir imagens e minificar JS com Gulp.",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build",
+    "images": "gulp images",
+    "styles": "gulp styles",
+    "scripts": "gulp scripts"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-sourcemaps": "^3.0.0",
+    "del": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0"
+  }
+}
