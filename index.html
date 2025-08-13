@@ -1,17 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="utf-8">
-  <title>Gulp Exercício</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gulp Exercício – Demo</title>
   <link rel="stylesheet" href="dist/css/main.min.css">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background: #f2f2f2;
+      color: #333;
+    }
+    header {
+      background: #ff6a00;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-  <main style="padding:40px">
+
+  <header>
     <h1>Gulp Exercício</h1>
-    <p>CSS compilado, JS minificado e imagens prontas.</p>
-    <a class="button" href="#" onclick="alert('Funcionou!')">Clique aqui</a>
-    <script src="dist/js/app.min.js"></script>
+    <p>CSS compilado, JS minificado e imagens otimizadas</p>
+  </header>
+
+  <main>
+    <h2>Galeria de Imagens Otimizadas</h2>
+    <div class="gallery">
+      <img src="dist/images/bird-ga5d9ed257_1920.jpg" alt="Pássaro em voo">
+      <img src="dist/images/birds-g6b63afc7a_1920.jpg" alt="Cisnes e garças">
+      <img src="dist/images/butterfly-g7f3546b64_1920.jpg" alt="Borboleta">
+      <img src="dist/images/hands-gc143a78ba_1920.png" alt="Mãos">
+      <img src="dist/images/lilies-g19bcb21a4_1920.jpg" alt="Lírios">
+      <img src="dist/images/street-gddeece843_1920.jpg" alt="Rua em neblina">
+    </div>
   </main>
+
+  <footer>
+    <p>Projeto criado para demonstração do workflow Gulp</p>
+  </footer>
+
+  <script src="dist/js/app.min.js"></script>
 </body>
 </html>
